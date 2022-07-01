@@ -1,0 +1,283 @@
+@media (max-width: 1200px) {
+
+    .main {
+        &__section {
+            margin-top: 100px;
+        }
+
+        &__title {
+            margin-top: 0;
+        }
+
+        &__text {
+            margin: 0 0 30px 0;
+        }
+        &__aside {
+            img {
+                height: 80%;
+            }
+        }
+    }
+    .about {
+        &__card {
+            height: 300px;
+        }
+    }
+
+    .cards {
+        &__card {
+            height: 400px;
+        }
+    }
+
+    .blocks {
+        &__block {
+            height: 320px;
+        }
+    }
+
+    .contactus {
+        &__img {
+            flex-basis: 40%;
+        }  
+    }
+}
+
+
+@media (max-width: 979px) { 
+
+    .main {
+        
+        &__aside {
+
+            img {
+                height: 70%;
+                right: 0;
+            }
+        }
+    }
+
+    .blocks {
+        &__block {
+            padding: 30px 50px;
+            height: 250px;
+        }
+    }
+
+    .contactus {
+        &__section {
+            padding: 0;
+        }
+        &__mini-title {
+            margin-bottom: 50px;
+        }
+        &__title {
+            font-size: 50px;
+            line-height: 60px;
+            margin-bottom: 0;
+        }
+        &__text {
+            margin-bottom: 50px;
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+
+    
+  
+    
+}   
+
+
+@media (max-width: 767px) {
+    .main {
+        &__wraper {
+            min-height: fit-content;
+        }
+        &__header {
+            padding-left: 10px;
+        }
+        &__nav {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        &__nav-item {
+            padding: 10px;
+        }
+        &__section {
+            margin: 50px 0 0 10px;
+            max-width: 90%;
+        }
+        &__title {
+            font-size: 35px;
+            line-height: 40px;
+        }
+        &__text {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        &__aside {
+            display: none;
+        }
+        
+
+        
+    }
+
+    .why {
+        &__section {
+            margin: 40px 0;
+        }
+        &__text {
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+
+    .about {
+        &__title {
+            margin: 30px 0 0 50px;
+        }
+        &__text {
+            margin: 24px 0 0 50px;
+        }
+        &__cards {
+            margin-bottom: 0;
+        }
+    }
+
+    .cards {
+        &__card {
+            height:300px;
+        }
+    }
+
+
+
+    .blocks {
+        gap: 10px;
+        padding: 20px;
+        &__block {
+            padding: 0;
+            height: fit-content;
+
+        }
+        &__title {
+            margin-top: 0;
+        }
+    }
+    .know {
+        &__section {
+            padding: 20px 50px;
+        }
+        &__mini-title {
+            margin-bottom: 30px;
+        }
+        &__text {
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 50px;
+        }
+    }
+    .contactus {
+        &__section {
+            margin: 20px;
+        }
+    }
+    .contact {
+        &__block {
+            padding: 0 10px;
+        }
+    }
+  
+}
+
+@media  (max-width: 479px) {  
+    .main {
+        &__wraper {
+            margin: 0;
+            padding: 20px;
+        }
+        &__nav {
+            flex-direction: column;
+            margin: 0 10px;
+        }
+        &__btns {
+            margin-bottom: 30px;
+        }
+    }
+
+    .why {
+        flex-direction: column;
+        &__img {
+            position: unset;
+        }
+        &__img img {
+            position: unset;
+        }
+    }
+
+    .about {
+        &__block {
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        &__title {
+            margin-left: 0;
+        }
+        &__text {
+            margin-left: 0;
+            width: 70%;
+            font-size: 20px;
+        }
+        
+    }
+    .know {
+        flex-direction: column;
+        &__section {
+            width: fit-content;
+            padding: 20px 0;
+        }
+        &__img {
+            position: unset;
+        }
+        &__img img {
+            position: unset;
+        }
+        &__text {
+            max-width: 70%;
+        }
+    }
+    .contactus {
+        flex-direction: column;
+        &__section {
+            width: unset;
+            padding: 20px;
+            margin: 0;
+        }
+        &__img {
+            position: unset;
+        }
+        &__img img {
+            position: unset;
+        }
+
+    }
+    .contact {
+        flex-direction: column;
+        &__img {
+            position: unset;
+        }
+        &__img img {
+            position: unset;
+        }
+    }
+
+    .footer {
+        padding: 34px 10px;
+    }
+ 
+  
+}

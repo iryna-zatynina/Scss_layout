@@ -1,17 +1,15 @@
 body {
     font-family: 'Larsseit', sans-serif;
-    margin: 0;
     padding: 0;
-    max-width: 1440px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .main {
     color: #22356F;
+    overflow: hidden;
 
     &__wraper {
-        max-width: 1118px;
-        margin: 20px auto 0 auto;
+        margin: 20px 5% 0 5%;
         min-height: 819px;
         background: #F4F9E2;
     }
@@ -34,10 +32,7 @@ body {
     &__nav {
         display: flex;
         justify-content: space-between;
-        width: 233px;
         height: fit-content;
-        z-index: 20;
-
     }
 
     &__nav-item {
@@ -46,7 +41,11 @@ body {
         &:hover {
             box-shadow: inset 0px -1px 0px #22356F;
         }
-        padding: 12px 4px 10px 4px;
+        padding: 12px 6px 10px 6px;
+        z-index: 20;
+        cursor: pointer;
+        text-decoration: none;
+        color: #22356F;;
     }
 
     &__btn-contact {
@@ -60,19 +59,24 @@ body {
         background: #62D0DF;
         border-radius: 50px;
         color: #FFFFFF;
-        position: relative;
-        right: -33px;
-        top: 0;
         z-index: 20;
+        text-decoration: none;
     }
 
     &__body {
         display: flex;
+        width: 100%;
+
     }
 
     &__section {
         margin: 182px 0 0 40px;
-        flex: 0 0 484px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        flex: 0 1 45%; 
     }
 
     &__title {
@@ -80,7 +84,6 @@ body {
         font-weight: bold;
         line-height: 53px;
         letter-spacing: -0.035em;
-        height: 167px;
         margin-bottom: 19px;
     }
 
@@ -119,26 +122,32 @@ body {
     }
 
     &__aside {
-        background: url("images/2.png") 100% 0 no-repeat;
+        flex: 0 0 55%;
         position: relative;
-        top: -90px;
-        right: -12px;
+        
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: -9.5%;
+            right: -20%;
+        }
     }
 }
 
 .why {
-    
     color: #FFFFFF;
     display: flex;
-    justify-content: space-between;
     background: #62D0DF;
 
     &__section {
+        align-self: center;
         display: flex;
-        justify-content: space-between;
         flex-direction: column;
-        max-width: 912px;
-        padding: 12% 13% 6%;
+        align-items: center;
+        margin: 70px 0;
         
     }
 
@@ -146,14 +155,30 @@ body {
         font-size: 36px;
         line-height: 27px;
         letter-spacing: -0.006em;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     &__text {
-        max-width: 540px;
+        width: 70%;
         font-size: 22px;
         line-height: 35px;
-        
+    }
+
+
+    &__img {
+        justify-self: end;
+        flex: 0 0 33%;
+        position: relative;
+    }
+
+    &__img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
 }
@@ -162,7 +187,7 @@ body {
     color: #22356F;
 
     &__block {
-        margin: 100px auto 76px auto;
+        margin: 5% auto 5% auto;
         display: flex;
     }
 
@@ -177,7 +202,7 @@ body {
         font-size: 24px;
         line-height: 34px;
         letter-spacing: 0.005em;
-        max-width: 592px;
+        width: 50%;
         margin: 56px 0 0 16%;
         
     }
@@ -192,9 +217,15 @@ body {
     }
 
     &__cards {
-        display: grid;
-        grid-template: 360px / repeat(4, 360px);
+        display: flex;
+        flex-wrap: wrap;
         margin-bottom: 120px;
+        
+    }
+
+    &__card {
+        height: 350px;
+        flex: 1 0 25%;
     }
 
 
@@ -218,12 +249,16 @@ body {
 }
 
 .cards {
-    display: grid;
-    grid-template: repeat(2, 480px) / repeat(3, 480px);
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 22px;
 
+    &__card {
+        flex: 1 0 33.333%;
+        height: 450px;
+    }
     &__title {
-        margin: 96px 70px 0 70px;
+        margin: 96px 10% 0 10%;
         padding: 30px 120px 0 32px;
         box-shadow: inset 0px 1px 0px #FFFFFF; 
         position: relative;
@@ -266,7 +301,8 @@ body {
 }
 
 .pic {
-    background: url("images/4.png");
+    background: url("images/4.png") no-repeat;
+    background-size: cover;
 }
 
 .light-purple {
@@ -278,12 +314,16 @@ body {
 }
 
 .blocks {
-    display: grid;
-    grid-template: repeat(2, 240px) / repeat(3, 480px);
+    display: flex;
+    flex-wrap: wrap;
     color: #22356F;
+    margin-bottom: 20px;
 
     &__block {
         padding: 54px 76px 36px 104px;
+        height: 420px;
+        flex: 1 0 33.333%;
+        box-sizing: border-box;
     }
 
     &__title {
@@ -305,11 +345,29 @@ body {
     color: #22356F;
     display: flex;
 
+    &__img {
+        flex: 0 0 33%;
+        position: relative;
+    }
+
+    &__img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
     &__section {
-        margin: 104px 0 42px 106px;
+        align-self: stretch;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 104px 30px 42px 30px;
+        
     }
 
     &__mini-title {
@@ -318,11 +376,12 @@ body {
     }
 
     &__text {
-        max-width: 676px;
         font-size: 33px;
         font-weight: bold;
         line-height: 53px;
         letter-spacing: -0.01em;
+        max-width: 676px;
+        margin-bottom: 150px;
 
         span {
             color: #62D0DF;
@@ -338,14 +397,15 @@ body {
     color: #FFFFFF;
     background: #22356F;
     display: flex;
-    justify-content: flex-end;
-    align-content: flex-start;
 
     &__section {
         margin: 104px 100px 60px 100px;
+        align-self: stretch;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
+        width: 100%;
         padding: 0 100px 0 80px;
     }
 
@@ -358,7 +418,7 @@ body {
         font-weight: bold;
         line-height: 94px;
         letter-spacing: -0.01em;
-        padding-top: 100px;
+        margin-top: 0;
     }
 
     &__text {
@@ -366,10 +426,24 @@ body {
         line-height: 53px;
         letter-spacing: -0.005em;
         max-width: 579px;
+        margin-bottom: 100px;
     }
 
     &__link {
         color: #62D0DF;
+    }
+
+    &__img {
+        flex: 0 0 30%;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
     }
 }
 
@@ -390,21 +464,41 @@ body {
 .contact {
     display: flex;
 
+    &__img {
+        flex: 0 0 30%;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
     &__section {
+        align-self: stretch;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 50px 0;
     }
 
     &__blocks {
-        padding: 98px 50px 0 68px;
+        width: 100%;
         display: flex;
+        justify-content: space-evenly;
     }
 
     &__block {
-        margin-right: 86px;
+        
     }
 
     &__title {
         font-size: 14px;
-        line-height: 11px;
+        line-height: 14px;
         letter-spacing: -0.006em;
         color: #22356F;
         margin-bottom: 58px;
@@ -417,11 +511,18 @@ body {
         letter-spacing: -0.006em;
         color: rgba(34, 53, 111, 0.5);
         max-width: 175px;
+        margin: 0;
     }
 }
 
 .email {
     color: #0052C1;
+    text-decoration: none;
+}
+
+.phone {
+    color: rgba(34, 53, 111, 0.5);
+    text-decoration: none;
 }
 
 .footer {
@@ -430,15 +531,14 @@ body {
     font-size: 14px;
     line-height: 11px;
     letter-spacing: -0.006em;
-    display: flex;
     padding: 34px 100px;
-
+    display: flex;
 
     &__copyright {
         margin: 0 6px 0 78px;
-    
     }
+}
 
-    &__text {
-    }
+.bold {
+    font-weight: bold;
 }
